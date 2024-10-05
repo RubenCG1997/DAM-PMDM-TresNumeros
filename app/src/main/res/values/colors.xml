@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="etv_primerNúmero">#0000FF</color>
+    <color name="etv_SegundoNúmero">#0000FF</color>
+    <color name="etv_TercerNúmero">#0000FF</color>
+    <color name="tv_Menor">#FFC107</color>
+    <color name="tv_Mediano">#FFC107</color>
+    <color name="tv_Mayor">#FFC107</color>
+    <color name="btn_Menor">#64DD17</color>
+    <color name="btn_Mayor">#64DD17</color>
+    <color name="btn_Asc">#00B8D4</color>
+    <color name="btn_Desc">#00B8D4</color>
+    <color name="btn_Borrar">#FF0000</color>
+</resources>

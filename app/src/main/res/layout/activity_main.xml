@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LayoutPrincipal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/LayoutPrimerNumero"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_PrimerNumero"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/tv_PrimerNumero"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etn_PrimerNumero"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/etv_primerNúmero"
+            android:ems="8"
+            android:hint="@string/etv_PrimerNumero"
+            android:inputType="numberSigned"
+            android:textAlignment="textEnd" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LayoutSegundoNumero"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_SegundoNumero"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/tv_SegundoNumero"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etn_SegundoNumero"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/etv_SegundoNúmero"
+            android:ems="8"
+            android:hint="@string/etv_SegundoNumero"
+            android:inputType="numberSigned"
+            android:textAlignment="textEnd" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LayoutTercerNumero"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_TercerNumero"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/tv_TercerNumero"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etn_TercerNumero"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/etv_TercerNúmero"
+            android:ems="8"
+            android:hint="@string/etv_TercerNumero"
+            android:inputType="numberSigned"
+            android:textAlignment="textEnd" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LayoutComparador"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_Menor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/bagel_fat_one"
+            android:gravity="center"
+            android:text="@string/tv_Menor"
+            android:textColor="@color/tv_Menor"
+            android:textSize="60sp" />
+
+        <TextView
+            android:id="@+id/tv_Mediano"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/bagel_fat_one"
+            android:gravity="center"
+            android:text="@string/tv_Mediano"
+            android:textColor="@color/tv_Mediano"
+            android:textSize="60sp" />
+
+        <TextView
+            android:id="@+id/tv_Mayor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/bagel_fat_one"
+            android:gravity="center"
+            android:text="@string/tv_Mayor"
+            android:textColor="@color/tv_Mayor"
+            android:textSize="60sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LayoutBtnMayorMenor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_Menor"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="10dp"
+            android:backgroundTint="@color/btn_Menor"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:text="@string/btn_Menor"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            app:cornerRadius="5dp" />
+
+        <Button
+            android:id="@+id/btn_Mayor"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:backgroundTint="@color/btn_Mayor"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:text="@string/btn_Mayor"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            app:cornerRadius="5dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LayoutBtnOrden"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_Asc"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="10dp"
+            android:backgroundTint="@color/btn_Asc"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:text="@string/btn_Asc"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            app:cornerRadius="5dp" />
+
+        <Button
+            android:id="@+id/btn_Desc"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:backgroundTint="@color/btn_Desc"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:text="@string/btn_Desc"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            app:cornerRadius="5dp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_Borrar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="@color/btn_Borrar"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:paddingLeft="0dp"
+        android:paddingTop="0dp"
+        android:paddingRight="0dp"
+        android:paddingBottom="0dp"
+        android:text="@string/btn_Borrar"
+        android:textSize="24sp"
+        app:cornerRadius="5dp" />
+
+</LinearLayout>
