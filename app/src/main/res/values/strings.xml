@@ -1,14 +1,14 @@
 <resources>
     <string name="app_name">Tres numeros</string>
-    <string name="tv_PrimerNumero">Número 1:</string>
-    <string name="tv_SegundoNumero">Número 2:</string>
-    <string name="tv_TercerNumero">Número 3:</string>
-    <string name="etv_PrimerNumero">Introduce un número</string>
-    <string name="etv_SegundoNumero">Introduce un número</string>
-    <string name="etv_TercerNumero">Introduce un número</string>
-    <string name="tv_Menor"></string>
-    <string name="tv_Mediano"></string>
-    <string name="tv_Mayor"></string>
+    <string name="lbl_Etiqueta1">Número 1:</string>
+    <string name="lbl_Etiqueta2">Número 2:</string>
+    <string name="lbl_Etiqueta3">Número 3:</string>
+    <string name="txt_PrimerNumero">Introduce un número</string>
+    <string name="txt_SegundoNumero">Introduce un número</string>
+    <string name="txt_TercerNumero">Introduce un número</string>
+    <string name="txt_Menor"></string>
+    <string name="txt_Mediano"></string>
+    <string name="txt_Mayor"></string>
     <string name="btn_Menor">Menor</string>
     <string name="btn_Mayor">Mayor</string>
     <string name="btn_Asc">Ord Asc</string>

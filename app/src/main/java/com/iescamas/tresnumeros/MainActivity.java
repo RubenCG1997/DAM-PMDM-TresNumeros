@@ -4,28 +4,22 @@ import android.os.Bundle;
 import android.widget.Button;
 import android.widget.TextView;
 
-import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.Collections;
-import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
     final String msgError = "Error!!!!";
     //Instanciamos los objetos que vamos a utilizar
 
-    TextView etv_PrimerNumero;
-    TextView etv_SegundoNumero;
-    TextView etv_TercerNumero;
-    TextView tv_Menor;
-    TextView tv_Mediano;
-    TextView tv_Mayor;
+    TextView txt_PrimerNumero;
+    TextView txt_SegundoNumero;
+    TextView txt_TercerNumero;
+    TextView txt_Menor;
+    TextView txt_Mediano;
+    TextView txt_Mayor;
     Button btn_Menor;
     Button btn_Mayor;
     Button btn_ord_Asc;
@@ -38,12 +32,12 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         //Vinculamos las instancias con los elementos de la interfaz
-        etv_PrimerNumero = findViewById(R.id.etn_PrimerNumero);
-        etv_SegundoNumero = findViewById(R.id.etn_SegundoNumero);
-        etv_TercerNumero = findViewById(R.id.etn_TercerNumero);
-        tv_Menor = findViewById(R.id.tv_Menor);
-        tv_Mediano = findViewById(R.id.tv_Mediano);
-        tv_Mayor = findViewById(R.id.tv_Mayor);
+        txt_PrimerNumero = findViewById(R.id.txt_PrimerNúmero);
+        txt_SegundoNumero = findViewById(R.id.txt_SegundoNumero);
+        txt_TercerNumero = findViewById(R.id.txt_TercerNúmero);
+        txt_Menor = findViewById(R.id.txt_Menor);
+        txt_Mediano = findViewById(R.id.txt_Mediano);
+        txt_Mayor = findViewById(R.id.txt_Mayor);
         btn_Menor = findViewById(R.id.btn_Menor);
         btn_Mayor = findViewById(R.id.btn_Mayor);
         btn_ord_Asc = findViewById(R.id.btn_Asc);
@@ -51,26 +45,26 @@ public class MainActivity extends AppCompatActivity {
         btn_Borrar = findViewById(R.id.btn_Borrar);
 
         //Establecemos los listener
-        btn_Mayor.setOnClickListener(view -> Operaciones("Mayor"));
-        btn_Menor.setOnClickListener(view -> Operaciones("Menor"));
-        btn_ord_Asc.setOnClickListener(view -> Operaciones("Ord Asc"));
-        btn_ord_Desc.setOnClickListener(view -> Operaciones("Ord Desc"));
+        btn_Mayor.setOnClickListener(view -> Operaciones(1));
+        btn_Menor.setOnClickListener(view -> Operaciones(2));
+        btn_ord_Asc.setOnClickListener(view -> Operaciones(3));
+        btn_ord_Desc.setOnClickListener(view -> Operaciones(4));
         btn_Borrar.setOnClickListener(view ->{
-            etv_PrimerNumero.setText("");
-            etv_SegundoNumero.setText("");
-            etv_TercerNumero.setText("");
-            tv_Menor.setText("");
-            tv_Mediano.setText("");
-            tv_Mayor.setText("");
+            txt_PrimerNumero.setText("");
+            txt_SegundoNumero.setText("");
+            txt_TercerNumero.setText("");
+            txt_Menor.setText("");
+            txt_Mediano.setText("");
+            txt_Mayor.setText("");
         });
 
     }
-    private void Operaciones(String msg){
+    private void Operaciones(int operacion){
 
         //Obtenemos los números pasandolos a String
-        String primerNumero = etv_PrimerNumero.getText().toString();
-        String segundoNumero = etv_SegundoNumero.getText().toString();
-        String tercerNumero = etv_TercerNumero.getText().toString();
+        String primerNumero = txt_PrimerNumero.getText().toString();
+        String segundoNumero = txt_SegundoNumero.getText().toString();
+        String tercerNumero = txt_TercerNumero.getText().toString();
 
         //Comprobamos que ninguno está vacio
         if(!primerNumero.isEmpty() && !segundoNumero.isEmpty() && !tercerNumero.isEmpty()){
@@ -86,38 +80,38 @@ public class MainActivity extends AppCompatActivity {
             Lista.add(tercero);
             //Ordeno la lista
             Collections.sort(Lista);
-            switch (msg){
+            switch (operacion){
 
-                case "Mayor":
-                               tv_Menor.setText("");
-                               tv_Mediano.setText(String.valueOf(Collections.max(Lista)));
-                               tv_Mayor.setText("");
+                case 1:
+                               txt_Menor.setText("");
+                               txt_Mediano.setText(String.valueOf(Collections.max(Lista)));
+                               txt_Mayor.setText("");
                 break;
 
-                case "Menor":
-                              tv_Menor.setText("");
-                              tv_Mediano.setText(String.valueOf(Collections.min(Lista)));
-                              tv_Mayor.setText("");
+                case 2:
+                              txt_Menor.setText("");
+                              txt_Mediano.setText(String.valueOf(Collections.min(Lista)));
+                              txt_Mayor.setText("");
                 break;
 
-                case "Ord Asc":
-                              tv_Menor.setText(String.valueOf(Collections.min(Lista)));
-                              tv_Mediano.setText(String.valueOf(Lista.get(1)));
-                              tv_Mayor.setText(String.valueOf(Collections.max(Lista)));
+                case 3:
+                              txt_Menor.setText(String.valueOf(Collections.min(Lista)));
+                              txt_Mediano.setText(String.valueOf(Lista.get(1)));
+                              txt_Mayor.setText(String.valueOf(Collections.max(Lista)));
                 break;
 
-                case "Ord Desc":
-                              tv_Menor.setText(String.valueOf(Collections.max(Lista)));
-                              tv_Mediano.setText(String.valueOf(Lista.get(1)));
-                              tv_Mayor.setText(String.valueOf(Collections.min(Lista)));
+                case 4:
+                              txt_Menor.setText(String.valueOf(Collections.max(Lista)));
+                              txt_Mediano.setText(String.valueOf(Lista.get(1)));
+                              txt_Mayor.setText(String.valueOf(Collections.min(Lista)));
                 break;
 
             }
         }
         else{
-            tv_Menor.setText("");
-            tv_Mediano.setText(msgError);
-            tv_Mayor.setText("");
+            txt_Menor.setText("");
+            txt_Mediano.setText(msgError);
+            txt_Mayor.setText("");
         }
     }
 }

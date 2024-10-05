@@ -16,22 +16,22 @@
         android:orientation="horizontal">
 
         <TextView
-            android:id="@+id/tv_PrimerNumero"
+            android:id="@+id/lbl_Etiqueta1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/tv_PrimerNumero"
+            android:text="@string/lbl_Etiqueta1"
             android:textSize="16sp"
             android:textStyle="bold" />
 
         <EditText
-            android:id="@+id/etn_PrimerNumero"
+            android:id="@+id/txt_PrimerNúmero"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:backgroundTint="@color/etv_primerNúmero"
             android:ems="8"
-            android:hint="@string/etv_PrimerNumero"
+            android:hint="@string/txt_PrimerNumero"
             android:inputType="numberSigned"
             android:textAlignment="textEnd" />
     </LinearLayout>
@@ -43,22 +43,22 @@
         android:orientation="horizontal">
 
         <TextView
-            android:id="@+id/tv_SegundoNumero"
+            android:id="@+id/lbl_Etiqueta2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/tv_SegundoNumero"
+            android:text="@string/lbl_Etiqueta2"
             android:textSize="16sp"
             android:textStyle="bold" />
 
         <EditText
-            android:id="@+id/etn_SegundoNumero"
+            android:id="@+id/txt_SegundoNumero"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:backgroundTint="@color/etv_SegundoNúmero"
             android:ems="8"
-            android:hint="@string/etv_SegundoNumero"
+            android:hint="@string/txt_SegundoNumero"
             android:inputType="numberSigned"
             android:textAlignment="textEnd" />
     </LinearLayout>
@@ -70,22 +70,22 @@
         android:orientation="horizontal">
 
         <TextView
-            android:id="@+id/tv_TercerNumero"
+            android:id="@+id/lbl_Etiqueta3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/tv_TercerNumero"
+            android:text="@string/lbl_Etiqueta3"
             android:textSize="16sp"
             android:textStyle="bold" />
 
         <EditText
-            android:id="@+id/etn_TercerNumero"
+            android:id="@+id/txt_TercerNúmero"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:backgroundTint="@color/etv_TercerNúmero"
             android:ems="8"
-            android:hint="@string/etv_TercerNumero"
+            android:hint="@string/txt_TercerNumero"
             android:inputType="numberSigned"
             android:textAlignment="textEnd" />
     </LinearLayout>
@@ -99,35 +99,35 @@
         android:orientation="horizontal">
 
         <TextView
-            android:id="@+id/tv_Menor"
+            android:id="@+id/txt_Menor"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:fontFamily="@font/bagel_fat_one"
             android:gravity="center"
-            android:text="@string/tv_Menor"
+            android:text="@string/txt_Menor"
             android:textColor="@color/tv_Menor"
             android:textSize="60sp" />
 
         <TextView
-            android:id="@+id/tv_Mediano"
+            android:id="@+id/txt_Mediano"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:fontFamily="@font/bagel_fat_one"
             android:gravity="center"
-            android:text="@string/tv_Mediano"
+            android:text="@string/txt_Mediano"
             android:textColor="@color/tv_Mediano"
             android:textSize="60sp" />
 
         <TextView
-            android:id="@+id/tv_Mayor"
+            android:id="@+id/txt_Mayor"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:fontFamily="@font/bagel_fat_one"
             android:gravity="center"
-            android:text="@string/tv_Mayor"
+            android:text="@string/txt_Mayor"
             android:textColor="@color/tv_Mayor"
             android:textSize="60sp" />
     </LinearLayout>
